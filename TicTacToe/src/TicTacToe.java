@@ -26,6 +26,9 @@ public class TicTacToe {
         textLabel.setHorizontalAlignment(JLabel.CENTER);
         textLabel.setText("Tic-Tac-Toe");
         textLabel.setOpaque(true);
+
+        textPanel.setLayout(new BorderLayout());
+        textPanel.add(textLabel);
     }
 
     // https://www.youtube.com/watch?v=Nc77ymnm8Ss
