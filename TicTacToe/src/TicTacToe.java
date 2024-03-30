@@ -8,7 +8,7 @@ public class TicTacToe {
     int boardWidth = 600;
     int boardHeight = 650; // 50px for the text
 
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("Tic-Tac-Toe");
     JLabel textLabel = new JLabel();
     JPanel textPanel = new JPanel();
 
@@ -22,13 +22,14 @@ public class TicTacToe {
 
         textLabel.setBackground(Color.darkGray);
         textLabel.setForeground(Color.white);
-        textLabel.setFont(new Font("Arial", Font.BOLD  , 50));
+        textLabel.setFont(new Font("Arial", Font.BOLD, 50));
         textLabel.setHorizontalAlignment(JLabel.CENTER);
         textLabel.setText("Tic-Tac-Toe");
         textLabel.setOpaque(true);
 
         textPanel.setLayout(new BorderLayout());
         textPanel.add(textLabel);
+        frame.add(textPanel, BorderLayout.NORTH);
     }
 
     // https://www.youtube.com/watch?v=Nc77ymnm8Ss
