@@ -11,6 +11,7 @@ public class TicTacToe {
     JFrame frame = new JFrame("Tic-Tac-Toe");
     JLabel textLabel = new JLabel();
     JPanel textPanel = new JPanel();
+    JPanel boardPanel = new JPanel();
 
     TicTacToe() {
         frame.setVisible(true);
@@ -30,6 +31,9 @@ public class TicTacToe {
         textPanel.setLayout(new BorderLayout());
         textPanel.add(textLabel);
         frame.add(textPanel, BorderLayout.NORTH);
+
+        boardPanel.setLayout(new GridLayout(3, 3));
+        boardPanel.setBackground(Color.darkGray);
     }
 
     // https://www.youtube.com/watch?v=Nc77ymnm8Ss
